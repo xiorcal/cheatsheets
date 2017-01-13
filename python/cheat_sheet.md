@@ -1,4 +1,5 @@
-# Language convention
+# Python
+## Language convention
 
 
  * Function names should be lowercase, with words separated by underscores as necessary to improve readability.
@@ -7,8 +8,29 @@
  * Limit all lines to a maximum of 79 characters.
  * Break line before binary operator.
 
-# tips
-## argparse
+## tips
+### slices
+Syntax : `sequence[start:stop:step]`
+
+Example :
+```python
+L = range(10)
+L[5:9]
+# [5,6,7,8,9]
+L[::2]
+# [0, 2, 4, 6, 8]
+L[::-1]
+#[9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+
+a = range(3) #[0, 1, 2]
+a[1:3] = [4, 5, 6]
+a
+# [0, 4, 5, 6]
+```
+
+
+
+### argparse
 
 ```python
 import argparse
@@ -28,7 +50,7 @@ else:
 
 
 
-## files
+### files
 
 ```python
 with open(newfile, 'w', encoding='utf-8') as outfile:
