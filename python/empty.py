@@ -16,5 +16,6 @@ def main(arguments):
     args = parser.parse_args(arguments)
     print(args)
 
+
 if __name__ == '__main__':
     sys.exit(main(sys.argv))
