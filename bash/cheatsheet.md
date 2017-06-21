@@ -29,6 +29,7 @@ install with `cabal update ; cabal install ShellCheck`
 ### run processes in parallel
 
 ```bash
+#!/bin/bash
 for c in $commands_to_run
 do
     c &
